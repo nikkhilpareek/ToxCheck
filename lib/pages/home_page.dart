@@ -15,18 +15,27 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
+  String? _selectedSearchTerm;
   
-  final List<Widget> _pages = [
-    const HomePageContent(),
-    const SearchPage(),
-    const HistoryPage(),
-    const ProfilePage(),
-  ];
+  void _navigateToSearch(String searchTerm) {
+    setState(() {
+      _selectedIndex = 1; // Navigate to search page
+      _selectedSearchTerm = searchTerm;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages[_selectedIndex],
+      body: IndexedStack(
+        index: _selectedIndex,
+        children: [
+          HomePageContent(onNavigateToSearch: _navigateToSearch),
+          SearchPage(initialSearchTerm: _selectedSearchTerm),
+          const HistoryPage(),
+          const ProfilePage(),
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: const Color(0xFF1D1F24), 
         currentIndex: _selectedIndex,
@@ -60,7 +69,17 @@ class _HomePageState extends State<HomePage> {
 }
 
 class HomePageContent extends StatelessWidget {
-  const HomePageContent({super.key});
+  const HomePageContent({super.key, this.onNavigateToSearch});
+
+  final Function(String)? onNavigateToSearch;
+
+  final List<String> recentSearches = const [
+    "Maggi Noodles",
+    "Coca Cola",
+    "Lay's Chips",
+    "Dairy Milk Chocolate",
+    "Biscoff Cookies"
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -113,7 +132,7 @@ class HomePageContent extends StatelessWidget {
             icon: Icons.search,
             label: "Search by\nIngredients",
             iconBackgroundColor: const Color(0xFFF5FFA8),
-            onTap: () => print("Search tapped"),
+            onTap: () => onNavigateToSearch?.call(""),
           ),
           QuickActionCard(
             icon: Icons.compare_arrows,
@@ -128,7 +147,56 @@ class HomePageContent extends StatelessWidget {
             onTap: () => print("Allergen tapped"),
           ),
         ],
-      ),],
+      ),
+              const SizedBox(height: 24),
+              const Text(
+                "Recent Searches",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              const SizedBox(height: 12),
+              
+              // Recent Search List
+              Expanded(
+                child: ListView.separated(
+                  itemCount: recentSearches.length,
+                  separatorBuilder: (_, __) => const SizedBox(height: 10),
+                  itemBuilder: (context, index) {
+                    return GestureDetector(
+                      onTap: () {
+                        // Navigate to search page with this term
+                        onNavigateToSearch?.call(recentSearches[index]);
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: const Color(0xFF272A32),
+                          borderRadius: BorderRadius.circular(14),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.15),
+                              blurRadius: 6,
+                              offset: const Offset(0, 2),
+                            )
+                          ],
+                        ),
+                        child: ListTile(
+                          leading: const Icon(Icons.history, color: Color(0xFFF5FFA8)),
+                          title: Text(
+                            recentSearches[index],
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          trailing: const Icon(Icons.arrow_forward_ios, size: 14, color: Colors.white54),
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),],
           ),
         ),
       ),
