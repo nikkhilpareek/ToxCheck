@@ -1,0 +1,228 @@
+{
+  "en:e102": {
+    "name": "Tartrazine (E102)",
+    "risk": "May cause hyperactivity in children, allergic reactions",
+    "status": "Restricted in some countries",
+    "severity": "medium"
+  },
+  "en:e110": {
+    "name": "Sunset Yellow FCF (E110)",
+    "risk": "May cause hyperactivity in children, allergic reactions",
+    "status": "Banned in Norway and Finland",
+    "severity": "medium"
+  },
+  "en:e122": {
+    "name": "Azorubine (E122)",
+    "risk": "May cause hyperactivity in children, allergic reactions",
+    "status": "Banned in USA",
+    "severity": "medium"
+  },
+  "en:e124": {
+    "name": "Ponceau 4R (E124)",
+    "risk": "May cause hyperactivity in children, allergic reactions",
+    "status": "Banned in USA",
+    "severity": "medium"
+  },
+  "en:e129": {
+    "name": "Allura Red AC (E129)",
+    "risk": "May cause hyperactivity in children, allergic reactions",
+    "status": "Restricted in some countries",
+    "severity": "medium"
+  },
+  "en:e133": {
+    "name": "Brilliant Blue FCF (E133)",
+    "risk": "May cause allergic reactions",
+    "status": "Banned in Belgium, France, Germany, Switzerland, Sweden, Austria, Norway",
+    "severity": "low"
+  },
+  "en:e211": {
+    "name": "Sodium Benzoate",
+    "E number": "E211",
+    "INS number": "INS 211",
+    "known risks": "May cause hyperactivity in children when combined with certain colors",
+    "status": "Approved with limits",
+    "severity": "medium"
+  },
+  "en:e220": {
+    "name": "Sulphur Dioxide (E220)",
+    "risk": "Can cause asthma attacks, allergic reactions",
+    "status": "Banned on fresh meat and fish in some countries",
+    "severity": "medium"
+  },
+  "en:e621": {
+    "name": "Monosodium Glutamate (MSG)",
+    "E number": "E621",
+    "INS number": "INS 621",
+    "known risks": "Safe for general population, but some may experience headaches or nausea",
+    "status": "Approved",
+    "severity": "low"
+  },
+  "en:e951": {
+    "name": "Aspartame (E951)",
+    "risk": "May cause headaches, mood changes in sensitive individuals",
+    "status": "Controversial but approved",
+    "severity": "low"
+  },
+  "en:e320": {
+    "name": "Butylated Hydroxyanisole (BHA) (E320)",
+    "risk": "Possible carcinogen, endocrine disruptor",
+    "status": "Banned in Japan and parts of EU",
+    "severity": "high"
+  },
+  "en:e321": {
+    "name": "Butylated Hydroxytoluene (BHT) (E321)",
+    "risk": "Possible carcinogen, endocrine disruptor",
+    "status": "Restricted in some countries",
+    "severity": "high"
+  },
+  "en:e319": {
+    "name": "Tertiary-Butylhydroquinone (TBHQ) (E319)",
+    "risk": "May cause nausea, vomiting, ringing in the ears",
+    "status": "Banned in Japan and EU",
+    "severity": "high"
+  },
+  "en:e104": {
+    "name": "Quinoline Yellow (E104)",
+    "risk": "May cause hyperactivity in children, allergic reactions",
+    "status": "Banned in USA, Australia, Canada, EU",
+    "severity": "medium"
+  },
+  "en:e151": {
+    "name": "Brilliant Black BN (E151)",
+    "risk": "May cause allergic reactions",
+    "status": "Banned in Denmark, Belgium, France, Germany, Switzerland, Sweden, Austria, Norway, USA",
+    "severity": "medium"
+  },
+  "en:e123": {
+    "name": "Amaranth (E123)",
+    "risk": "Suspected carcinogen (linked to cancer in animals)",
+    "status": "Banned in USA",
+    "severity": "high"
+  },
+  "en:e127": {
+    "name": "Erythrosine (E127)",
+    "risk": "May cause thyroid tumors and endocrine disruption",
+    "status": "Banned in USA (food additive)",
+    "severity": "high"
+  },
+  "en:e128": {
+    "name": "Red 2G (E128)",
+    "risk": "Carcinogenic effect in animal studies",
+    "status": "Banned in EU and USA",
+    "severity": "high"
+  },
+  "en:e150d": {
+    "name": "Caramel Colour (Sulphite Ammonia Caramel, E150d)",
+    "risk": "Contains 4-Methylimidazole (suspected carcinogen)",
+    "status": "California Prop 65 warning (cancer risk)",
+    "severity": "medium"
+  },
+  "en:e217": {
+    "name": "Propylparaben (E217)",
+    "risk": "Potential endocrine disruptor (may affect hormones)",
+    "status": "Banned in EU (food additive)",
+    "severity": "medium"
+  },
+  "en:e210": {
+    "name": "Benzoic Acid (E210)",
+    "risk": "May cause allergic reactions, exacerbates asthma and hyperactivity",
+    "status": "Allowed but controversial",
+    "severity": "low"
+  },
+  "en:e213": {
+    "name": "Calcium Benzoate (E213)",
+    "risk": "May cause allergic reactions in sensitive individuals",
+    "status": "Allowed but less commonly used",
+    "severity": "low"
+  },
+  "en:e250": {
+    "name": "Sodium Nitrite (E250)",
+    "risk": "Can form carcinogenic nitrosamines, risk of cancer",
+    "status": "Restricted in baby foods and cured meats",
+    "severity": "high"
+  },
+  "en:e251": {
+    "name": "Sodium Nitrate (E251)",
+    "risk": "Similar risks as sodium nitrite (nitrosamines formation)",
+    "status": "Restricted in baby foods and cured meats",
+    "severity": "high"
+  },
+  "en:e952": {
+    "name": "Cyclamate (E952)",
+    "risk": "Suspected carcinogen (bladder tumors in animal studies)",
+    "status": "Banned in USA and some other countries",
+    "severity": "medium"
+  },
+  "en:e954": {
+    "name": "Saccharin (E954)",
+    "risk": "Linked to bladder cancer in rats (historically controversial)",
+    "status": "Previously banned (USA), now approved with caution",
+    "severity": "low"
+  },
+  "en:e924": {
+    "name": "Potassium Bromate (E924)",
+    "risk": "Possible carcinogen (kidney tumors in animal studies)",
+    "status": "Banned in EU, China, and many others (not in USA)",
+    "severity": "high"
+  },
+  "en:e927a": {
+    "name": "Azodicarbonamide (E927a)",
+    "risk": "Linked to asthma in workers and potential breakdown into semicarbazide (possible carcinogen)",
+    "status": "Banned in EU (used in bread/food)",
+    "severity": "medium"
+  },
+  "en:e443": {
+    "name": "Brominated Vegetable Oil (E443)",
+    "risk": "Contains bromine, may affect thyroid/endocrine system",
+    "status": "Banned in EU, Japan, and others",
+    "severity": "high"
+  },
+  "en:e171": {
+    "name": "Titanium Dioxide",
+    "E number": "E171",
+    "INS number": "INS 171",
+    "known risks": "Potential genotoxicity; banned in EU",
+    "status": "Banned in EU",
+    "severity": "medium"
+  },
+  "en:e284": {
+    "name": "Boric Acid (E284)",
+    "risk": "Toxic if ingested (reproductive and developmental toxin)",
+    "status": "Banned as a food additive in many countries",
+    "severity": "high"
+  },
+  "en:e285": {
+    "name": "Borax (Sodium Tetraborate) (E285)",
+    "risk": "Toxicity similar to boric acid (reproductive toxin)",
+    "status": "Banned as a food additive in EU and USA",
+    "severity": "high"
+  },
+  "en:e153": {
+    "name": "Vegetable Carbon (E153)",
+    "risk": "May contain carcinogenic impurities (PAHs)",
+    "status": "Banned as a food additive in USA",
+    "severity": "high"
+  },
+  "en:e407": {
+    "name": "Carrageenan (E407)",
+    "risk": "May cause inflammation and gastrointestinal issues",
+    "status": "Controversial (removed from some baby formulas)",
+    "severity": "medium"
+  },
+  "en:e100": {
+    "name": "Curcumin",
+    "E number": "E100",
+    "INS number": "INS 100",
+    "known risks": "Generally safe, derived from turmeric",
+    "status": "Approved",
+    "severity": "none"
+  },
+  "en:e120": {
+    "name": "Cochineal (Carminic acid)",
+    "E number": "E120",
+    "INS number": "INS 120",
+    "known risks": "May cause allergic reactions in sensitive individuals",
+    "status": "Approved",
+    "severity": "low"
+  }
+}
