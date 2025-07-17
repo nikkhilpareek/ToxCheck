@@ -11,10 +11,10 @@ class SearchPage extends StatefulWidget {
   final String? initialSearchTerm;
 
   @override
-  State<SearchPage> createState() => _SearchPageState();
+  State<SearchPage> createState() => SearchPageState();
 }
 
-class _SearchPageState extends State<SearchPage> {
+class SearchPageState extends State<SearchPage> {
   final TextEditingController _searchController = TextEditingController();
   final ProductService _productService = ProductService();
   final LocalStorageService _storageService = LocalStorageService();
@@ -42,6 +42,17 @@ class _SearchPageState extends State<SearchPage> {
     setState(() {
       _recentSearches = _storageService.getRecentSearches();
     });
+  }
+
+  // Public method to refresh recent searches from external calls
+  void refreshRecentSearches() {
+    _loadRecentSearches();
+  }
+
+  // Public method to search with a specific query from external calls
+  void searchWithQuery(String query) {
+    _searchController.text = query;
+    _performSearch(query);
   }
 
   @override
